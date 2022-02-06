@@ -17,10 +17,10 @@
   <body>
     
     <!-- navbar 1 -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark  fixed-top ">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark   ">
       <a class="navbar-brand" href="#">
         <img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-        Bootstrap
+        NewsDaily
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -29,12 +29,12 @@
       <div class="collapse navbar-collapse px-5" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-20 mb-md-20 ">
           
-          <li class="nav-item px-2">
+          <li class="nav-item1 px-2">
             <a class="nav-link active" aria-current="page" href="/about">About</a>
           </li>
-          <li class="nav-item px-2">
+          <li class="nav-item1 px-2">
             <a class="nav-link active" aria-current="page" href="">SubmitPressRelease</a>
-          </li><li class="nav-item px-2">
+          </li><li class="nav-item1 px-2">
             <a class="nav-link active" aria-current="page" href="/contact">Contact us</a>
           
          
@@ -47,37 +47,32 @@
       </div>
     </nav>
     <!-- navbar 2 -->
-    <div class="nav-scroller p-3 navbar-light mt-5"   style="background-color: #ffffff;">
+    <div class="nav-scroller p-2 navbar-light "   style="background-color: #ffffff;">
       <nav class="nav nav-underline justify-content-md-center blog-pagination">  
-        <li class="nav-item active">
-          <a class="nav-link" href="#"><strong>HOME</strong> <span class="sr-only"></span></a>
+        <li class="nav-item ">
+          <a class="nav-link active text-dark" href="#"><strong>HOME</strong>  </a>
         </li> 
         <li class="nav-item">  
-          <a class="nav-link active text-secondary" aria-current="page" href="{% url 'home' %}?category=technology"><strong>TECHNOLOGY</strong></a>
+          <a class="nav-link active text-dark" aria-current="page" href="{% url 'home' %}?category=technology"><strong>TECHNOLOGY</strong></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="{% url 'home' %}?category=Business"><strong>BUSINESS</strong></a>
+          <a class="nav-link active text-dark" aria-current="page" href="{% url 'home' %}?category=Business"><strong>BUSINESS</strong></a>
         </li><li class="nav-item">
          
-          <button type="button" class="btn btn-light "aria-current="page" href="{% url 'home' %}?category=health">HEALTH</button>
         </li><li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="{% url 'home' %}?category=Sports"><strong>SPORTS </strong></a>
+          <a class="nav-link active text-dark" aria-current="page" href="{% url 'home' %}?category=Sports"><strong>HEALTH </strong></a>
         </li>
         </li><li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="{% url 'home' %}?category=Entertainment"> <strong>ENTERTAINMENT</strong>  </a>
+          <a class="nav-link active text-dark" aria-current="page" href="{% url 'home' %}?category=Sports"><strong>SPORTS </strong></a>
+        </li>
+        </li><li class="nav-item">
+          <a class="nav-link active text-dark" aria-current="page" href="{% url 'home' %}?category=Entertainment"> <strong>ENTERTAINMENT</strong>  </a>
+        </li>
+        </li><li class="nav-item">
+          <a class="nav-link active text-dark" aria-current="page" href="{% url 'home' %}?category=Entertainment"> <strong>SCIENCE</strong>  </a>
         </li>
       
-        <li class="nav-item">
-          <!-- <a class="nav-link active" aria-current="page" href="{% url 'home' %}?category=Science"><strong> SCIENCE</strong></a> -->
-          <a class="btn btn-outline-primary" href="{% url 'home' %}?category=Science"> <strong> SCIENCE</strong></a>
-          <a class="btn btn-outline-warning" href="{% url 'home' %}?category=Science"> <strong> SCIENCE</strong></a>
-
-        </li>
-       
-      </ul><nav class="blog-pagination">
-        <a class="btn btn-outline-primary" href="#">Older</a>
-        <a class="btn btn-outline-secondary disabled" href="#">Newer</a>
-      </nav>
+      
       </nav>
     </div>
  
@@ -97,17 +92,8 @@
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="1000">
-            <img class="d-block w-100" src="/static/2.jfif" alt="First slide">
-          </div>
-          <div class="carousel-item" data-bs-interval="1000">
-            <img class="d-block w-100" src="/static/1.jfif" alt="Second slide">
-          </div>
-          <div class="carousel-item" data-bs-interval="1000">
-            <img class="d-block w-100" src="/static/3.jfif" alt="Third slide">
-          </div>
-          <div class="carousel-item" data-bs-interval="1000">
-            <img class="d-block w-100"width="300" height="570" src="https://source.unsplash.com/1600x900/?news,sports" alt="Third slide">
+          <div class="carousel-item active" data-bs-interval="10">
+            <img class="d-block w-100 " width="300" height="630"  src="https://source.unsplash.com/1600x900/?Business" alt="First slide">
             <div class="carousel-caption d-none d-md-block">
               <h1 class="brand-banner__header">
                 <div>Get Informed</div>
@@ -115,37 +101,64 @@
               </h1>
             </div>
           </div>
-          <div class="carousel-item" data-bs-interval="1000">
-            <img class="d-block w-100" width="300" height="570" src="https://source.unsplash.com/1600x900/?tech,news,politics" alt="Third slide">
+          <div class="carousel-item" data-bs-interval="10">
+            <img class="d-block w-100" width="300" height="630" src="https://source.unsplash.com/1600x900/?politics" alt="Second slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="brand-banner__header">
+                <div>Get Informed</div>
+                <div>Get Inspired</div>
+              </h1>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="10">
+            <img class="d-block w-100 "width="300" height="630" src="https://source.unsplash.com/1600x900/?health" alt="Third slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="brand-banner__header">
+                <div>Get Informed</div>
+                <div>Get Inspired</div>
+              </h1>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="10">
+            <img class="d-block w-100"width="300" height="630" src="https://source.unsplash.com/1600x900/?technology" alt="Third slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="brand-banner__header">
+                <div>Get Informed</div>
+                <div>Get Inspired</div>
+              </h1>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="10">
+            <img class="d-block w-100" width="300" height="630" src="https://source.unsplash.com/1600x900/?sports" alt="Third slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="brand-banner__header">
+                <div>Get Informed</div>
+                <div>Get Inspired</div>
+              </h1>
+            </div>
           </div>
         </div> 
       
      </div> 
     
+     <div class="news">
+       <p>RECENT NEWS</p>
+       <hr>
+     </div>
     
-     <!-- <p>{{data}}</p> -->
-   <!-- {% for i in articles %}
-    <img src="{{i.urlToImage}}" alt="" height="200px" width="200px" />
-    <p>{{i.author}}</p>
-    <p>{{i.title}}</p>
-    <p>{{i.description}}</p>
-    <a href="{{i.url}}" target="blank">Go Full News</a>
-    <small>published at:{{i.publishedAt}}</small>
-    {% endfor %} -->  
-
-    <!-- News cards -->
      
     <div class="container">
                  <div class="row-sm-12  d-flex flex-wrap justify-content-center">
                   {% for i in articles %}
                   <div class="card  shadow-xs m-3 m-3" style="width: 300px; height: 510px;
-                  border-radius: 10px 10px 10px 10px;">
-                   <img src="{{ i.urlToImage }}" class="card-img-top " style="border-radius: 10px 10px 0px 0px;" alt="..." />
+                   ">
+                   <img src="{{ i.urlToImage }}" class="card-img-top "   alt="..." />
+                    <hr>
                     <div class="card-body ">
                      <p class="card-text">{{ i.author }}</p>
                          <h5 class="card-title">{{ i.title }}</h5>
                       <p class="card-title">{{ i.source.name }}</p>
-                       <hr />
+                       
                        <small>Date: {{ i.publishedAt }}</small>
                       <a href="{{ i.url }}" target="_blank" class="btn btn-success m-1"
                        >See News</a>
@@ -154,24 +167,23 @@
 
                   {% endfor %}
       </div>
+</div>
+<div class="footer">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <p class="col-md-4 mb-0 text-muted">&copy; 2021 Company, Inc</p>
 
-      <div class="container">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-          <p class="col-md-4 mb-0 text-muted">&copy; 2021 Company, Inc</p>
-      
-          <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-          </a>
-      
-          <ul class="nav col-md-4 justify-content-end">
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
-          </ul>
-        </footer>
-      </div>
+    <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+    </a>
+
+    <ul class="nav col-md-4 justify-content-end">
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+    </ul>
+  </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -183,14 +195,49 @@
     color:rgb(rgb(194, 0, 0), green, blue);
     display: inline-block;
     font-family: FaktCondensed,AvenirNextCondensed-Medium,Segoe UI,sans-serif;
-    font-size: 40px;
-    font-weight: 900;
-    line-height: 42px;
-    margin-bottom: 16px;
+    font-size: 60px;
+    font-weight: 1000;
+    margin-bottom: 100px;
     text-transform: uppercase;
 }
 body{
-  background-color:  rgba(207, 207, 207, 0.699);
+  background-color:  rgba(255, 255, 255, 0.699);
+}
+.news{
+  margin-top: 20px;
+   font-size: 35px;
+  font-style: bold;
+  font-weight: 900;
+  padding-left: 35px;
+
+}
+ 
+.container{
+  background-color: rgb(240, 240, 240);
+}
+.card{
+    margin-top: 75px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding: 0 10px;
+     border-radius: 10px;
+    background-color: #fff;
+    transition: all .4s ease-in-out;
+    box-shadow: 0 0 25px 0 rgba(20, 27, 202, .17)
+}
+.card-img-top {
+padding:8px;
 }
 
+.card:hover {
+  box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+  cursor: pointer;
+  background-image: linear-gradient(-45deg, #fb0054 0%, #f55b2a 100%);
+ }
+
+.nav-item:hover{
+  background-color:  rgb(240, 240, 240);
+  border-radius: 15px;
+}
+ 
 </style>
